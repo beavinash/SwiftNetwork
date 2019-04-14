@@ -12,6 +12,7 @@
 		82CDC18E2263BF1B0032FEDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CDC18D2263BF1B0032FEDB /* Assets.xcassets */; };
 		82CDC1912263BF1B0032FEDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CDC18F2263BF1B0032FEDB /* LaunchScreen.storyboard */; };
 		82CDC19C2263BF1B0032FEDB /* SwiftNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CDC19B2263BF1B0032FEDB /* SwiftNetworkTests.swift */; };
+		82CDC1AC2263C40D0032FEDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CDC1AB2263C40D0032FEDB /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		82CDC1972263BF1B0032FEDB /* SwiftNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CDC19B2263BF1B0032FEDB /* SwiftNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNetworkTests.swift; sourceTree = "<group>"; };
 		82CDC19D2263BF1B0032FEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82CDC1AB2263C40D0032FEDB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,13 @@
 			children = (
 				82CDC1862263BF1A0032FEDB /* AppDelegate.swift */,
 				82CDC18A2263BF1A0032FEDB /* Main.storyboard */,
-				82CDC18D2263BF1B0032FEDB /* Assets.xcassets */,
 				82CDC18F2263BF1B0032FEDB /* LaunchScreen.storyboard */,
 				82CDC1922263BF1B0032FEDB /* Info.plist */,
+				82CDC1A62263C2BC0032FEDB /* Application */,
+				82CDC1A72263C2C70032FEDB /* Model */,
+				82CDC1A92263C2E60032FEDB /* ViewController */,
+				82CDC1AA2263C3030032FEDB /* Networking */,
+				82CDC18D2263BF1B0032FEDB /* Assets.xcassets */,
 			);
 			path = SwiftNetwork;
 			sourceTree = "<group>";
@@ -91,6 +97,35 @@
 				82CDC19D2263BF1B0032FEDB /* Info.plist */,
 			);
 			path = SwiftNetworkTests;
+			sourceTree = "<group>";
+		};
+		82CDC1A62263C2BC0032FEDB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		82CDC1A72263C2C70032FEDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82CDC1A92263C2E60032FEDB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				82CDC1AB2263C40D0032FEDB /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		82CDC1AA2263C3030032FEDB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82CDC1872263BF1A0032FEDB /* AppDelegate.swift in Sources */,
+				82CDC1AC2263C40D0032FEDB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
