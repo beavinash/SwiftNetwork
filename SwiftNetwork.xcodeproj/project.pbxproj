@@ -13,6 +13,11 @@
 		82CDC1912263BF1B0032FEDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CDC18F2263BF1B0032FEDB /* LaunchScreen.storyboard */; };
 		82CDC19C2263BF1B0032FEDB /* SwiftNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CDC19B2263BF1B0032FEDB /* SwiftNetworkTests.swift */; };
 		82CDC1AC2263C40D0032FEDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CDC1AB2263C40D0032FEDB /* MainViewController.swift */; };
+		82CDC1AF2263C5440032FEDB /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CDC1AE2263C5440032FEDB /* EndPointType.swift */; };
+		82CDC1B12263C6150032FEDB /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CDC1B02263C6150032FEDB /* HTTPMethod.swift */; };
+		82CDC1B32263C7000032FEDB /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CDC1B22263C7000032FEDB /* HTTPTask.swift */; };
+		82CDC1B52263C7A20032FEDB /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CDC1B42263C7A20032FEDB /* HTTPHeaders.swift */; };
+		82CDC1B82263C7EF0032FEDB /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CDC1B72263C7EF0032FEDB /* ParameterEncoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		82CDC19B2263BF1B0032FEDB /* SwiftNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNetworkTests.swift; sourceTree = "<group>"; };
 		82CDC19D2263BF1B0032FEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82CDC1AB2263C40D0032FEDB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		82CDC1AE2263C5440032FEDB /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		82CDC1B02263C6150032FEDB /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		82CDC1B22263C7000032FEDB /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		82CDC1B42263C7A20032FEDB /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		82CDC1B72263C7EF0032FEDB /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +134,29 @@
 		82CDC1AA2263C3030032FEDB /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				82CDC1B62263C7D10032FEDB /* Encoding */,
+				82CDC1AD2263C51F0032FEDB /* Service */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		82CDC1AD2263C51F0032FEDB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				82CDC1AE2263C5440032FEDB /* EndPointType.swift */,
+				82CDC1B02263C6150032FEDB /* HTTPMethod.swift */,
+				82CDC1B22263C7000032FEDB /* HTTPTask.swift */,
+				82CDC1B42263C7A20032FEDB /* HTTPHeaders.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		82CDC1B62263C7D10032FEDB /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				82CDC1B72263C7EF0032FEDB /* ParameterEncoding.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82CDC1B82263C7EF0032FEDB /* ParameterEncoding.swift in Sources */,
+				82CDC1B52263C7A20032FEDB /* HTTPHeaders.swift in Sources */,
+				82CDC1B12263C6150032FEDB /* HTTPMethod.swift in Sources */,
+				82CDC1B32263C7000032FEDB /* HTTPTask.swift in Sources */,
 				82CDC1872263BF1A0032FEDB /* AppDelegate.swift in Sources */,
 				82CDC1AC2263C40D0032FEDB /* MainViewController.swift in Sources */,
+				82CDC1AF2263C5440032FEDB /* EndPointType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
